@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About';
+import InfoBlock from './components/InfoBlock';
 import Main from './components/Main';
 
 import logo_light from '../src/assets/svg/logo-light.svg';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <About img={logo_dark} btnColor={button_color} />
+      <InfoBlock />
       <Main />
       <About backColor={'--dark-blue'} img={logo_light} btnColor={button_footer_color} />
     </div>
