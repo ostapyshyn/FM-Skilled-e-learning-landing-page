@@ -1,7 +1,13 @@
 import React from 'react';
+import Course from '../Course';
+import styles from './Main.module.scss';
 
 function Main() {
-  return <div>Check out our most popular courses!</div>;
+  return (
+    <div className={styles.container}>
+      <Course />
+    </div>
+  );
 }
 
 export default Main;
