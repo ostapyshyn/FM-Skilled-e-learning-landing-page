@@ -2,4 +2,22 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
+
+  display: flex;
+  gap: 30px;
+
+  margin-bottom: 140px;
+}
+
+.popular {
+  width: 350px;
+  height: 322px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 15px;
+  padding-inline: 32px;
+  padding-top: 64px;
 }
