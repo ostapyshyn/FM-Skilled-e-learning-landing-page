@@ -3,15 +3,12 @@ import Button from '../Button';
 import styles from './Course.module.scss';
 import { ReactComponent as Animation } from '../../assets/svg/icon-animation.svg';
 
-function Course() {
+function Course({ title, text, image }) {
   return (
     <div className={styles.course}>
-      <h2>Animation</h2>
+      <h2>{title}</h2>
       <Animation />
-      <p>
-        Learn the latest animation techniques to create stunning motion design and captivate your
-        audience.
-      </p>
+      <p>{text}</p>
       <button>Get Started</button>
     </div>
   );

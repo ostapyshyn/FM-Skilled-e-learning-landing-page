@@ -8,6 +8,11 @@
   background: #ffffff;
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   border-radius: 15px;
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   svg {
     position: absolute;
@@ -36,6 +41,9 @@
     line-height: 28px;
     background-color: transparent;
     color: #f74780;
+    margin-top: auto;
+    margin-bottom: 40px;
+
     cursor: pointer;
 
     &:active {

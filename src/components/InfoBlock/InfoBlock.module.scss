@@ -4,6 +4,8 @@
   max-width: 1110px;
   margin-top: 185px;
 
+  
+
   .container {
     max-width: 457px;
     margin-bottom: 226px;
@@ -37,6 +39,10 @@
       border: none;
       width: 167px;
       height: 63px;
+      &:active {
+        transform: scale(0.98);
+      }
+      cursor: pointer;
     }
   }
 }
