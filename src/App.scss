@@ -10,9 +10,11 @@
   /* max-width: 500px;
   border: 1px solid mediumblue; */
   margin: auto;
+
 }
 
 .hero-image {
+  z-index: -1;
   @include min(576px) {
     position: absolute;
     top: 0;
@@ -26,6 +28,6 @@
   @include min(992px) {
     height: 95vh;
     background-image: url(./assets/hero/image-hero-desktop.png);
-    background-position: 35px -145px;
+    background-position: 88px -145px;
   }
 }

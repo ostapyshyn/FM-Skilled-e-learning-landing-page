@@ -1,11 +1,23 @@
+@import '../../index.scss';
+
 .about_info {
-  
   width: 100%;
   height: 120px;
+  margin-left: -40px;
+  margin-right: -40px;
+  width: calc(100% + 80px - 1px);
 
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @include max(1210px) {
+    padding-inline: 40px;
+  }
+
+  @include max(600px) {
+    padding-inline: 16px;
+  }
 
   .about {
     margin: 0 auto;
@@ -16,5 +28,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  span {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 45px;
+    color: #ffffff;
+    @include max(768px) {
+      font-size: 28px;
+      line-height: 35px;
+    }
   }
 }

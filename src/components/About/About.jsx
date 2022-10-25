@@ -2,11 +2,11 @@ import React from 'react';
 import Button from '../Button';
 import styles from './About.module.scss';
 
-function About({ backColor, img, btnColor }) {
+function About({ backColor, dark, btnColor }) {
   return (
     <div style={{ backgroundColor: `var(${backColor})` }} className={styles.about_info}>
       <div className={styles.about}>
-        <img src={img} alt="logo" />
+        <span style={{ color: dark ? '#fff' : '#13183F' }}>skilled</span>
         <Button btnColor={btnColor}>Get Started</Button>
       </div>
     </div>
