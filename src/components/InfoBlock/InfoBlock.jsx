@@ -13,11 +13,6 @@ function InfoBlock() {
         </p>
         <button>Get Started</button>
       </div>
-
-      <picture>
-        <source media="(min-width: 1440px)" srcSet={hero} />
-        <img src={hero} alt="hero" />
-      </picture>
     </div>
   );
 }

@@ -7,8 +7,8 @@ function Main() {
   return (
     <div className={styles.container}>
       <div className={styles.popular}>Check out our most popular courses!</div>
-      {courses.map((course) => {
-        return <Course title={course.title} text={course.text} image={course.image} />;
+      {courses.map((course, index) => {
+        return <Course title={course.title} text={course.text} image={course.image} key={index} />;
       })}
     </div>
   );

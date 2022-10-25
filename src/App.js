@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import About from './components/About';
 import InfoBlock from './components/InfoBlock';
 import Main from './components/Main';
@@ -12,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="hero-image"></div>
       <About img={logo_dark} btnColor={button_color} />
       <InfoBlock />
       <Main />
