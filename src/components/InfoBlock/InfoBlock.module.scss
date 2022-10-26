@@ -1,17 +1,26 @@
+@import '../../index.scss';
+
 .info {
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
   margin-top: 185px;
 
-  
+  @include max(1024px) {
+    margin-top: 78px;
+  }
 
   .container {
     max-width: 457px;
-    margin-bottom: 226px;
+    margin-bottom: 250px;
 
     display: flex;
     flex-direction: column;
+
+    @include max(1024px) {
+      margin-bottom: 210px;
+      max-width: 398px;
+    }
 
     h1 {
       font-weight: 800;
@@ -19,6 +28,11 @@
       line-height: 71px;
       color: #13183f;
       margin-bottom: 29px;
+      @include max(1024px) {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 25px;
+      }
     }
 
     p {
@@ -27,6 +41,11 @@
       line-height: 28px;
       color: #83869a;
       margin-bottom: 40px;
+      @include max(1024px) {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 24px;
+      }
     }
     button {
       font-weight: 700;
@@ -39,6 +58,9 @@
       border: none;
       width: 167px;
       height: 63px;
+      @include max(1024px) {
+        height: 56px;
+      }
       &:active {
         transform: scale(0.98);
       }

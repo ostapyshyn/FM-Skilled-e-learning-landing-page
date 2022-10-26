@@ -16,8 +16,10 @@
   flex-direction: column;
   align-items: flex-start;
 
-  @include max(1188px) {
+  @include max(1024px) {
     width: 339px;
+    height: auto;
+    padding-top: 56px;
   }
 
   svg {
@@ -31,6 +33,11 @@
     line-height: 30px;
     color: #13183f;
     margin-bottom: 24px;
+    @include max(1024px) {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 16px;
+    }
   }
   p {
     font-weight: 500;
@@ -39,6 +46,10 @@
     color: #83869a;
 
     margin-bottom: 24px;
+    @include max(1024px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
   button {
     font-weight: 700;
@@ -49,6 +60,9 @@
     color: #f74780;
     margin-top: auto;
     margin-bottom: 40px;
+    @include max(1024px) {
+      margin-bottom: 32px;
+    }
 
     cursor: pointer;
 

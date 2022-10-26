@@ -10,7 +10,6 @@
   /* max-width: 500px;
   border: 1px solid mediumblue; */
   margin: auto;
-
 }
 
 .hero-image {
@@ -20,14 +19,14 @@
     top: 0;
     right: 0;
     width: 56%;
-    height: 70vh;
+    height: 83vh;
     background-image: url(./assets/hero/image-hero-tablet.png);
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: 35px -95px;
   }
-  @include min(992px) {
+  @include min(1025px) {
     height: 95vh;
     background-image: url(./assets/hero/image-hero-desktop.png);
-    background-position: 88px -145px;
+    background-position: 97px -145px;
   }
 }
