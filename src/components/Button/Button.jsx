@@ -6,9 +6,11 @@ import styles from './Button.module.scss';
 //   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 // }
 
-function Button({ children, backColor, img, btnColor }) {
+function Button({ children, backColor, img, btnColor, dark }) {
   return (
-    <button style={{ background: btnColor }} className={styles.button}>
+    <button
+      style={{ background: btnColor }}
+      className={`${styles.button} ${dark ? styles.active_light : styles.active_dark} `}>
       {children}
     </button>
   );

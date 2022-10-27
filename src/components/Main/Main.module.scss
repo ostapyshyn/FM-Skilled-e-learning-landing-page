@@ -21,6 +21,17 @@
     margin-bottom: 36px;
     max-width: 689px;
   }
+  @include max(766px) {
+    margin-bottom: 30px;
+  }
+
+  .image {
+    display: none;
+    margin-bottom: -12px;
+    @include max(767px) {
+      display: block;
+    }
+  }
 }
 
 .popular {
@@ -42,5 +53,18 @@
     line-height: 32px;
     padding-top: 56px;
     height: auto;
+  }
+  @include max(767px) {
+    margin-bottom: 29px;
+    padding-top: 24px;
+    padding-inline: 29px;
+    padding-bottom: 32px;
+    width: 100%;
+  }
+
+  @include max(781px) {
+    padding-top: 24px;
+    padding-inline: 29px;
+    padding-bottom: 32px;
   }
 }

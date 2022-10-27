@@ -19,7 +19,7 @@ function About({ backColor, dark, btnColor }) {
     <div
       style={{
         backgroundColor: `var(${backColor})`,
-        height: dark ? '120px' : windowSize <= 1024 ? '90px' : '104px',
+        height: dark ? '120px' : windowSize <= 767 ? '75px' : windowSize <= 1024 ? '90px' : '104px',
       }}
       className={styles.about_info}>
       <div className={styles.about}>
@@ -29,7 +29,9 @@ function About({ backColor, dark, btnColor }) {
           }}>
           skilled
         </span>
-        <Button btnColor={btnColor}>Get Started</Button>
+        <Button btnColor={btnColor} dark={dark}>
+          Get Started
+        </Button>
       </div>
     </div>
   );

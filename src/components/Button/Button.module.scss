@@ -26,3 +26,16 @@
     transform: scale(0.98);
   }
 }
+
+.active_dark {
+  &:active {
+    background: #666ca3 !important;
+  }
+}
+
+.active_light {
+  &:active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%) !important;
+  }
+}

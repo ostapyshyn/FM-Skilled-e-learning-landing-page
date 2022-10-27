@@ -10,6 +10,10 @@
     margin-top: 78px;
   }
 
+  @include max(767px) {
+    margin-top: 26px;
+  }
+
   .container {
     max-width: 457px;
     margin-bottom: 250px;
@@ -20,6 +24,10 @@
     @include max(1024px) {
       margin-bottom: 210px;
       max-width: 398px;
+    }
+
+    @include max(767px) {
+      margin-bottom: 29px;
     }
 
     h1 {
@@ -63,6 +71,8 @@
       }
       &:active {
         transform: scale(0.98);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+          linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
       }
       cursor: pointer;
     }

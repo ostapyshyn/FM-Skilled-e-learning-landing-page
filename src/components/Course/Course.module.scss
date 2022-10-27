@@ -22,6 +22,11 @@
     padding-top: 56px;
   }
 
+  @include max(767px) {
+    margin-bottom: 29px;
+    width: auto;
+  }
+
   svg {
     position: absolute;
     top: -28px;
@@ -68,6 +73,7 @@
 
     &:active {
       transform: scale(0.98);
+      color: #ffa7c3;
     }
   }
 }

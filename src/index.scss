@@ -68,6 +68,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
   padding-inline: 39px;
+  @include max(720px) {
+    padding-inline: 16px;
+  }
 }
 
 code {

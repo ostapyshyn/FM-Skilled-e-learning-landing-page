@@ -15,6 +15,12 @@
     padding-inline: 40px;
   }
 
+  @include max(720px) {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
   @include max(600px) {
     padding-inline: 16px;
   }
